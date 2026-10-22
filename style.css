@@ -1,0 +1,41 @@
+   * {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    background: rgba(27, 24, 24, 0.747);
+    size: white;
+    justiFy-content:center;
+    align-items:center;
+}
+Form {
+    display: flex;
+    font-size: white 2px;
+    height: 50px;
+    margin: 20rem;
+    justify-content:center;
+    align-items:center;
+    background: rgba(0, 0, 0, 0.589);
+}
+input:focus {
+    transform: translate(4px);
+    transition: 0.7s;
+    background-color: rgba(12, 11, 11, 0.459);
+
+}
+button:hover {
+    background: rgba(185, 98, 98, 0.733);
+    transition: 0.7s;
+
+}
+.gateau{
+    transition: 0.7s;
+    cursor: pointer;
+}
+h2 {
+    display: flex;
+    margin-left: 50rem;
+}
