@@ -1,4 +1,8 @@
 <?php 
+session();
+if ($name == $_POST['nom']) {
+    echo "bienvenue";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
