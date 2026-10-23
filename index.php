@@ -34,6 +34,15 @@ var_dump($uri->getHost());
 
 <?php 
 
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if(!empty($_POST['nom']) && !empty($_POST['email'])) {
+        echo "vos case de nom et l'email sont vides ";
+}
+        else{
+            echo $name;
+        }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,16 +61,16 @@ var_dump($uri->getHost());
             </div>
             <div>
                 <label for="prenom">PRENOM:</label>
-                <input type="text" name="prenom" id="prenom" placeholder="Entrer votre prenom">
+                <input type="text" name="prenom" id="prenom" placeholder="Entrer votre prenom" require>
             </div>
             <div>
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="@Entrer votre email">
+                <input type="email" name="email" id="email" placeholder="@Entrer votre email" require>
             </div>
             <div>
                 <input type="password" name="password" id="password" placeholder="entrer votre password">
             </div>
-                <button type="submit">Envoyer</button>
+                <button type="submit" <?php ?> >Envoyer</button>
 
         </section>
     </form>
