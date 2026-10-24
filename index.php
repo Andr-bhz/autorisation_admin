@@ -34,7 +34,7 @@ var_dump($uri->getHost());
 
 <?php 
 
-
+require 'contact.php';
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(!empty($_POST['nom']) && !empty($_POST['email'])) {
         echo "vos case de nom et l'email sont vides ";
@@ -70,8 +70,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div>
                 <input type="password" name="password" id="password" placeholder="entrer votre password">
             </div>
-                <button type="submit" <?php ?> >Envoyer</button>
-
+                 <button type="submit">Envoyer</button>
         </section>
     </form>
 </body>
