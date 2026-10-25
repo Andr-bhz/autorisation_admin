@@ -4,24 +4,43 @@
     box-sizing: border-box;
 }
 a:hover {
+    transition: 0.4s;
     color: green;
     transform: scaleZ(2px);
 }
 a {
+    line-height: 10px;
+    color: white;
     text-decoration: none;
     text-transform: lowercase;
+    flex-direction: row;
 }
 header {
     display: flex;
-    padding-top:10px;
-    margin-left: 350px;
+    line-height: 50px;
     align-items: center;
     background-color: black;
     justify-content: center;
-
+    text-align: center;
 }
 body {
+    background-color: rgba(161, 145, 145, 0.76);
     display: grid;
     justify-content: left;
     align-items: center;
+    size:3px;
+}
+Footer {
+    background-color: sienna;
+    border: solid;
+    display: flex;
+    padding-bottom: 40%;
+    margin-bottom:auto;
+    border-color: beige;
+    justify-content: left;
+    display: grid;
+}
+select{
+    background:2px;
+    gap: 4px;
 }

@@ -1,6 +1,6 @@
 <?php
 
-$age =date('Y');
+$age=date('Y');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,13 +16,13 @@ $age =date('Y');
     </header>
 </head>
 <body>
-    <img src="gateau.jpg" alt="image" class="gateau" height="300" widht="100">
+    <img src="gateau.jpg" alt="image" class="gateau" height="500" widht="300">
         <p>decouvre mon site sur le developpe</p>
-    <img src="biscuit.jpg" alt="image" height="300" widht="100">
+    <img src="biscuit.jpg" alt="image" height="500" widht="300">
     <p>gouter a nos decilices sur <br> les chocolats caramelises</p>
-    <img src="douceur.jpg" alt="image" height="300" widht="100">
+    <img src="douceur.jpg" alt="image" height="500" widht="50">
     <p>sur notre site on a tous ce qu'ils vous Faut</p>
-    <img src="cupcack.jpg" alt="image" height="300" widht="100" >
+    <img src="cupcack.jpg" alt="image" height="500" widht="300" >
         <li>
             <ul>
                 <ol>au lait</ol>
@@ -30,14 +30,17 @@ $age =date('Y');
                 <ol>au caramel</ol>
             </ul>
         </li>
-    <img src="chocolat.jpg" alt="image" height="300" widht="100">
+    <img src="chocolat.jpg" alt="image" height="500" widht="300">
+
     <select name="parFum" id="parFum">
-        <?php For($i=2026;$i >= 2000;$i++){
-                echo "vous avez " ;}?>
+        <option value=""> <?php For($i=2026;$i >=2000;$i--){
+              }?></option>
+       
                 
     </select>
 </body>
 <Footer>
-
+    <p> && vous voulez plus de details veuillez nous contactez sur <br>
+le numero suivant +243 </p>
 </Footer>
 </html>

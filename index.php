@@ -51,6 +51,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Mon site</title>
+    <script src="./script.js" type="module"></script>
 </head>
 <body>
     <form action="scrol.php" method ="POST" value="">
@@ -73,6 +74,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                  <button type="submit">Envoyer</button>
         </section>
     </form>
+    <button>Bienvenue</button>
 </body>
 </html>
 
