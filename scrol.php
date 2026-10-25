@@ -1,6 +1,11 @@
 <?php
 
 $age=date('Y');
+$impt=var_dump($_COOKIE['age']);
+
+if(!empty($result)) {
+    echo "bienvenue";  
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +14,7 @@ $age=date('Y');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="img.css">
-     <header>
+     <header>     
         <a href="#accueil">Accueil</a>
         <a href="#a propos">A propos de nous</a>
         <a href="#contact">contact</a>
@@ -33,14 +38,13 @@ $age=date('Y');
     <img src="chocolat.jpg" alt="image" height="500" widht="300">
 
     <select name="parFum" id="parFum">
-        <option value=""> <?php For($i=2026;$i >=2000;$i--){
-              }?></option>
-       
-                
+    <?php For ($i=2026;$i >=2000;$i--): ?>
+    <option value=""><? echo $i ?></option>
+       <?php endFor?>          
     </select>
 </body>
 <Footer>
     <p> && vous voulez plus de details veuillez nous contactez sur <br>
-le numero suivant +243 </p>
+le numero suivant +243 840424703</p>
 </Footer>
 </html>

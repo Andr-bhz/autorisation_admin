@@ -74,7 +74,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                  <button type="submit">Envoyer</button>
         </section>
     </form>
-    <button>Bienvenue</button>
+    
 </body>
 </html>
 
