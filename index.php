@@ -4,10 +4,10 @@
 //si sont age < 18 = no disponible -->
 <!-- 
 <?php 
-$temps = date('l/m/Y');
-$calc = $_POST['date'] ;
+//$temps = date('l/m/Y');
+//$calc = $_POST['date'] ;
 
-echo $result;
+//echo $result;
 ?>
 <Form action ="" method='POST'>
     <div>
@@ -16,18 +16,18 @@ echo $result;
     </div>
     <select name="age" id="age">
         <?php 
-        for ($i=2026; $i >= 1990 ; $i--) { 
-        }
+  //      for ($i=2026; $i >= 1990 ; $i--) { 
+   //     }
              ?>
     </select>
 </Form> -->
 
 <!-- <?php
-use Uri\Rfc3986\Uri;
+//use Uri\Rfc3986\Uri;
 
-$uri = new Uri('https://php.net/releases/8.5/en.php');
+//$uri = new Uri('https://php.net/releases/8.5/en.php');
 
-var_dump($uri->getHost());
+//var_dump($uri->getHost());
 // string(7) "php.net"
 
 ?> -->
@@ -43,7 +43,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo $name;
         }
 }
-?>
+// var_dupm(dirmane(__DIR__));
+// exit();
+// $Fichier =__DIR__ . DIRECTORY_SEPARARTOR . 'scrol.php' ;
+// File_put_contents($Fichier, 'comment tu vas ' , FILE_APPEND);
+
+// ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,3 +83,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 </body>
 </html>
 
+<!-- <?php 
+//inset();
+
+
+?>  -->

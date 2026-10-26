@@ -1,11 +1,15 @@
 <?php
 
 $age=date('Y');
-$impt=var_dump($_COOKIE['age']);
+$result = $age - $_POST['date'];
+// $impt=var_dump($_COOKIE['age']);
 
-if(!empty($result)) {
-    echo "bienvenue";  
-}
+// if(!empty($result)) {
+//     echo "bienvenue";  
+// }
+echo $result ;
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,15 +40,19 @@ if(!empty($result)) {
             </ul>
         </li>
     <img src="chocolat.jpg" alt="image" height="500" widht="300">
-
-    <select name="parFum" id="parFum">
-    <?php For ($i=2026;$i >=2000;$i--): ?>
-    <option value=""><? echo $i ?></option>
-       <?php endFor?>          
-    </select>
+    <Form action="<?php echo $result ?>" method="POST">
+        <select name="date" id="date">
+            <?php For ($i=2026;$i >=1960;$i--): ?>
+            <option value=""><? echo $i ?></option>
+            <?php endFor?>          
+        </select>
+        <button type="submit">valider</button>
+    </Form>
 </body>
 <Footer>
     <p> && vous voulez plus de details veuillez nous contactez sur <br>
 le numero suivant +243 840424703</p>
 </Footer>
 </html>
+
+

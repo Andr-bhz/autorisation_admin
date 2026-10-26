@@ -29,6 +29,7 @@ input:focus {
     transform: translate(4px);
     transition: 0.7s;
     background-color: rgba(12, 11, 11, 0.459);
+    box-shadow: 20px;
 
 }
 button:hover {
@@ -48,4 +49,7 @@ h2 {
 button {
     padding-bottom: 5px;
     margin-bottom: 10px;
+}
+input{
+    color: rgba(97, 97, 165, 0.849);
 }
